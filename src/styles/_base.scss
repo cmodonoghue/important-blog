@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before  {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+}
+
+html {
+  font-size: 62.5%;
+} 
+
+body {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+}
+
+// variables
+
+$color-gray: #6A6E7C;
+$color-black: #2E2E2E;
+$color-white: #FFFFFF;
+$color-blue: #4BCAF2;
+$color-blue-dark: #21A3DB;
