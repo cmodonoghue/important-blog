@@ -1,5 +1,6 @@
 backend:
-  name: cmodonoghue/important-blog
+  name: github
+  repo: cmodonoghue/important-blog
 
 media_folder: static/assets
 public_folder: assets
