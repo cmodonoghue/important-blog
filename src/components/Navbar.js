@@ -21,12 +21,14 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar">
-        <div className="navbar-title">
-          <img className="navbar-title__img" src={Smile}></img>
-          <h1 className="navbar-title__text">
-            The Blog Where <span>Dreams</span> Come Alive
-          </h1>
-        </div>
+        <a href="/">
+          <div className="navbar-title">
+            <img className="navbar-title__img" src={Smile}></img>
+            <h1 className="navbar-title__text">
+              The Blog Where <span>Dreams</span> Come Alive
+            </h1>
+          </div>
+        </a>
         <div className="navbar-menu">
           <a 
             href="#" 
@@ -36,9 +38,9 @@ class Navbar extends React.Component {
             <img src={Menu}></img>
           </a>
           <ul className="navbar-menu-list">
-            <a className="navbar-menu-list__item">Science</a>
-            <a className="navbar-menu-list__item">Culture</a>
-            <a className="navbar-menu-list__item">Wisdom</a>
+            <a className="navbar-menu-list__item" href="/#science">Science</a>
+            <a className="navbar-menu-list__item" href="/#culture">Culture</a>
+            <a className="navbar-menu-list__item" href="/#wisdom">Wisdom</a>
           </ul>
         </div>
         <div className={this.state.isActive ? 'navbar-overlay active' : 'navbar-overlay'}>
@@ -50,9 +52,9 @@ class Navbar extends React.Component {
             <img src={CloseMenu}></img>
           </a>
           <ul className="mobile-menu-list">
-            <a className="mobile-menu-list__item">Science</a>
-            <a className="mobile-menu-list__item">Culture</a>
-            <a className="mobile-menu-list__item">Wisdom</a>
+            <a className="mobile-menu-list__item" href="/#science">Science</a>
+            <a className="mobile-menu-list__item" href="/#culture">Culture</a>
+            <a className="mobile-menu-list__item" href="/#wisdom">Wisdom</a>
           </ul>
         </div> 
       </div>

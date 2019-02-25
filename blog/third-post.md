@@ -1,7 +1,7 @@
 ---
 path: /do-spiders-get-lonely
 date: 2019-02-24T06:33:50.416Z
-title: Do Spiders Get Lonely?
+title: Explained - Why This Article About Big Chungus Is Under ‘Science’
 image: /img/spider-web.jpg
 category: science
 ---

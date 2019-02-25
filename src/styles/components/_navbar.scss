@@ -8,6 +8,7 @@
   height: 6rem;
   align-items: center;
   color: $color-gray;
+  margin-bottom: 1rem; 
 }
 
 // Title
@@ -25,7 +26,7 @@
 
 .navbar-title__text {
   font-size: 1.5rem;
-  width: 14rem;
+  width: 15rem;
   font-weight: normal;
   display: inline-block;
   text-transform: uppercase;
@@ -95,19 +96,21 @@
 
 @media (min-width: 600px) {
   .navbar {
-
+    height: 8rem;
+    padding-top: 2.3rem;
   }
   
   .navbar-title {
-
+    width: 35rem;
+    align-items: center;
   }
   
   .navbar-title__text {
-
-  
-    span {
-
-    }
+    font-size: 1.8rem;
+    width: 50rem;
+    text-align: left;
+    transform: translateY(-4%);
+    margin-left: 1rem;
   }
   
   .navbar-title__img {
@@ -120,12 +123,24 @@
   
   .navbar-menu-list {
     display: flex;
+    position: absolute;
+    top: 2.9rem;
+    right: 3rem;
   }
   
   .navbar-menu-list__item {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: 1rem;
     font-weight: 400;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  .overlay {
+    display: block;
   }
 }

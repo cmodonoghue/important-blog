@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Navbar from "../components/Navbar"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -7,14 +8,19 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+    <div>
+      <Navbar />
+      <div className="blog-post-container">
+        <div className="blog-post">
+          <img className="blog-post-img" src={frontmatter.image}></img>
+          <h2 className="blog-post-category" >{frontmatter.category}</h2>
+          <h1 className="blog-post-title">{frontmatter.title}</h1>
+          <h2 className="blog-post-date">{frontmatter.date}</h2>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
     </div>
   )
@@ -28,6 +34,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        image
+        category
       }
     }
   }

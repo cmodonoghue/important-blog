@@ -1,0 +1,45 @@
+.post-link {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  a {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+.post-link__heading {
+  font-size: 1.8rem;
+  color: $color-black;
+  margin-bottom: 1.5rem;
+  float: left;
+  text-align: left;
+  width: 15rem;
+  position: relative;
+}
+
+.post-link__text {
+  float: left;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 15rem;
+  position: relative;
+  clear: both;
+  height: auto;
+}
+
+.post-link__image {
+  width: 10rem;
+  height: 10rem;
+  right: 4.55rem;
+  position: absolute;
+  object-fit: cover;
+  margin: auto;
+  overflow: hidden;
+  float: right;
+  transform: translateY(8%);
+}
