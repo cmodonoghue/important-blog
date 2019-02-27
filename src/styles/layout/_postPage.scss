@@ -49,7 +49,7 @@
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .blog-post-content {
@@ -63,5 +63,45 @@
   p {
     margin-bottom: 2rem;
     
+  }
+}
+
+@media (min-width: 600px) {
+  .blog-post {
+
+  }
+
+  .blog-post__header {
+    margin-left: 5rem;
+    width: 35%;
+    height: 35rem;
+  }
+
+  .blog-post-img {
+    height: 35rem;
+  }
+
+  .blog-post-category {
+    
+  }
+
+  .blog-post-title {
+    text-align: left;
+  }
+
+  .blog-post-date {
+    margin-right: 0rem;
+  }
+
+  .blog-post-author {
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 20rem;
+    font-size: 1.8rem;
+  }
+
+  .blog-post-content {
+    margin: 5rem 20rem;
+    font-size: 2.1rem;
   }
 }
