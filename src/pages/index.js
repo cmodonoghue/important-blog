@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import styles from '../styles/main.scss';
 import PostLink from '../components/PostLink';
+import { Helmet } from 'react-helmet';
 
 const IndexPage = ({
   data: {
@@ -24,6 +25,9 @@ const IndexPage = ({
 
   return (
     <div className="main">
+      <Helmet
+        title="The Blog Where Dreams Come Alive"
+      />
       <Navbar />
       <div className="blog-index">
         <h1 className="blog-section__heading" id="science">Science</h1>

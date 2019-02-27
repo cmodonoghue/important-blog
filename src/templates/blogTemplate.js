@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Navbar from "../components/Navbar"
+import { Helmet } from "react-helmet";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -9,8 +10,11 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <div>
+      <Helmet  
+        title={frontmatter.title}
+      />
       <Navbar />
-      <div className="blog-post-container">
+      <div className="blog-post-container"> 
         <div className="blog-post">
         <img className="blog-post-img" src={frontmatter.image}></img>
           <div className="blog-post__header">            
