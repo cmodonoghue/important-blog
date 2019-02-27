@@ -43,3 +43,25 @@
   text-align: center;
   font-size: 2.1rem;
 }
+
+.blog-post-author {
+  color: $color-gray;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.blog-post-content {
+  font-size: 1.8rem;
+  line-height: 140%;
+  font-weight: 400;
+  margin: 3rem 3rem;
+  color: $color-black;
+  font-family: "Source Serif Pro";
+
+  p {
+    margin-bottom: 2rem;
+    
+  }
+}
