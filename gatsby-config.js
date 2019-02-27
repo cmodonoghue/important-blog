@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -19,7 +21,15 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`
-  ],
-  
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/img`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ], 
 }

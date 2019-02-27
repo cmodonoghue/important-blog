@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import styles from '../styles/main.scss';
 import PostLink from '../components/PostLink';
 import { Helmet } from 'react-helmet';
+import { graphql } from 'gatsby';
 
 const IndexPage = ({
   data: {

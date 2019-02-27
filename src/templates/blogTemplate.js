@@ -1,7 +1,9 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Navbar from "../components/Navbar"
+import React from "react";
+import { graphql } from "gatsby";
+import Navbar from "../components/Navbar";
+import styles from '../styles/main.scss';
 import { Helmet } from "react-helmet";
+import Img from "gatsby-image"; 
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

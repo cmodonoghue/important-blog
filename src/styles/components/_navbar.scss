@@ -40,10 +40,6 @@
 
 // Menu
 
-.navbar-menu {
-  
-}
-
 .navbar-menu__icon {
   color: $color-gray;
   position: absolute;
@@ -54,10 +50,6 @@
 .navbar-menu-list {
   display: none;
   list-style: none;
-}
-
-.navbar-menu-list__item {
-  
 }
 
 .navbar-overlay {
@@ -113,10 +105,7 @@
     transform: translateY(-4%);
     margin-left: 1.5rem;
   }
-  
-  .navbar-title__img {
 
-  }
 
   .navbar-menu__icon {
     display: none;
