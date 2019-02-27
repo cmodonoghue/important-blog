@@ -12,10 +12,12 @@ export default function Template({
       <Navbar />
       <div className="blog-post-container">
         <div className="blog-post">
-          <img className="blog-post-img" src={frontmatter.image}></img>
-          <h2 className="blog-post-category" >{frontmatter.category}</h2>
-          <h1 className="blog-post-title">{frontmatter.title}</h1>
-          <h2 className="blog-post-date">{frontmatter.date}</h2>
+        <img className="blog-post-img" src={frontmatter.image}></img>
+          <div className="blog-post__header">            
+            <h2 className="blog-post-category">{frontmatter.category}</h2>
+            <h1 className="blog-post-title">{frontmatter.title}</h1>
+            <h2 className="blog-post-date">{frontmatter.date}</h2>
+          </div>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}

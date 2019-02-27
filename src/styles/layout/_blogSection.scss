@@ -1,7 +1,10 @@
+.blog-index {
+  margin-top: 4.5rem; 
+  width: 100vw;
+}
+
 .blog-section {
-  display: grid;
   padding: 2.5rem;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -10,5 +13,34 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .blog-section {
+    position: relative;
+    box-sizing:border-box;
+    width: 100vw;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50rem 50rem;
+    grid-gap: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .blog-section__heading {
+    margin: 0 0 2rem 14.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+  }
 }

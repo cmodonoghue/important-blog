@@ -1,9 +1,45 @@
 .blog-post {
+  margin-top: 0.5rem;
+}
 
+.blog-post__header {
+  height: 32rem;
+  width: 100vw;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .blog-post-img {
   position: absolute;
-  height: auto;
+  height: 32rem;
   width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.blog-post-category {
+  font-weight: 300;
+  text-transform: capitalize;
+  font-family: "Source Serif Pro";
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+.blog-post-title {
+  font-size: 3.6rem; 
+  text-align: center;
+  margin: 2rem auto;
+  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post-date {
+  font-weight: 300;
+  text-transform: capitalize;
+  font-family: "Source Serif Pro";
+  text-align: center;
+  font-size: 2.1rem;
 }

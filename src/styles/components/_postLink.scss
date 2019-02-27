@@ -1,10 +1,15 @@
 .post-link {
   height: 10rem;
-  display: flex;
+  display: table;
   flex-direction: column;
+  overflow: auto;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
+  justify-content: center; 
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
   a {
     width: 90%;
@@ -14,6 +19,7 @@
 
 .post-link__heading {
   font-size: 1.8rem;
+  font-weight: 700;
   color: $color-black;
   margin-bottom: 1.5rem;
   float: left;
@@ -41,5 +47,44 @@
   margin: auto;
   overflow: hidden;
   float: right;
-  transform: translateY(8%);
+  transform: translateY(5%);
+}
+
+@media only screen and (min-width: 600px) {
+  .post-link__image {
+    float: none;
+    right: 0;
+    position: relative;
+  } 
+}
+
+@media (min-width: 1000px) {
+  .post-link {
+    width: auto ;
+    margin-bottom: 2rem;
+
+    &:hover {
+      color: $color-blue;
+      transform: translateY(-2%);
+      text-decoration: underline;
+    }
+  }
+
+  .post-link__heading {
+    font-size: 2.1rem;
+    width: 25rem;
+  }
+
+  .post-link__text {
+    font-size: 1.6rem;
+    width: 25rem;
+  }
+
+  .post-link__image {
+    position: relative;
+    width: 16rem;
+    height: 12rem;
+    right: 0;
+    float: none;
+  } 
 }

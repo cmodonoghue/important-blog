@@ -26,16 +26,16 @@ const IndexPage = ({
     <div className="main">
       <Navbar />
       <div className="blog-index">
+        <h1 className="blog-section__heading" id="science">Science</h1>
         <div className="blog-section">
-          <h1 className="blog-section__heading" id="science">Science</h1>
           {sciencePosts}
         </div>
+        <h1 className="blog-section__heading" id="culture">Culture</h1>
         <div className="blog-section">
-          <h1 className="blog-section__heading" id="culture">Culture</h1>
           {culturePosts}
         </div>
-        <div className="blog-section">
         <h1 className="blog-section__heading" id="wisdom">Wisdom</h1>
+        <div className="blog-section">
           {wisdomPosts}
         </div>
       </div>
@@ -51,7 +51,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 75)
+          excerpt(pruneLength: 97)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path

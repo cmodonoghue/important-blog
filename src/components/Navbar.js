@@ -52,9 +52,9 @@ class Navbar extends React.Component {
             <img src={CloseMenu}></img>
           </a>
           <ul className="mobile-menu-list">
-            <a className="mobile-menu-list__item" href="/#science">Science</a>
-            <a className="mobile-menu-list__item" href="/#culture">Culture</a>
-            <a className="mobile-menu-list__item" href="/#wisdom">Wisdom</a>
+            <a className="mobile-menu-list__item" href="/#science" onClick={this.toggleMenu}>Science</a>
+            <a className="mobile-menu-list__item" href="/#culture" onClick={this.toggleMenu}>Culture</a>
+            <a className="mobile-menu-list__item" href="/#wisdom" onClick={this.toggleMenu}>Wisdom</a>
           </ul>
         </div> 
       </div>
