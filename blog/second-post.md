@@ -1,7 +1,7 @@
 ---
-path: /big-chungus
+path: /test-2
 date: 2019-02-25
-title: Big Chungus
+title: This is a Second Test Post
 image: /img/spider-web.jpg
 category: culture
 ---
