@@ -2,4 +2,4 @@ Template for a blog site I created to practice responsive, mobile-first developm
 
 There WILL be actual content. As soon as I come up with ideas.
 
-Built with React, SASS, Gatsby, GraphQL, and NetlifyCMS.
+Built with HTML/CSS/JS, React, SASS, Gatsby, GraphQL, and NetlifyCMS.
