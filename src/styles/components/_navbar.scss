@@ -50,6 +50,10 @@
 .navbar-menu-list {
   display: none;
   list-style: none;
+
+  &__item {
+    margin-left: 1rem;
+  }
 }
 
 .navbar-overlay {
